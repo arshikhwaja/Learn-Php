@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Factorial of a Number</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take a number</li>
+	<li>Take the descending positive integers</li>
+	<li>Multiply them</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="VariableName">$num</span><span class="Expression"> = </span><span class="VariableValue">5</span><span class="Expression">;</span>
+<span class="VariableName">$fact</span><span class="Expression"> = </span><span class="VariableValue">1</span><span class="Expression">;</span>
+<span class="KeyWord">for</span><span class="Special">(</span><span class="VariableName">$i</span><span class="Expression">=</span><span class="VariableValue">0</span><span class="Special">;</span><span class="VariableName">$i</span><span class="Expression"><=</span><span class="Method">strlen</span><span class="Special">(</span><span class="VariableName">$num</span><span class="Special">);</span><span class="VariableName">$i++</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="VariableName"> $fact</span><span class="Expression"> = </span><span class="VariableName">$fact</span><span class="Expression">*</span><span class="VariableValue">$num</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="Method">echo</span><span class="String">"Factorial of 5 is "</span><span class="Answer">.$fact</span><span class="Expression">;</span>
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;Factorial of 5 is 120</span><br />
+		</div>
+
+</body>
+</html>

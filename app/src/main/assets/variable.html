@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Variables</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	Variables in a program are used to store some values or data that can be used later in a program. PHP has its own way of declaring and storing variables.<br>
+	There are few rules, that needs to be followed and facts that need to be kept in mind while dealing with variables in PHP:</p>
+	<ul>
+	<li style="font-family:times new roman; font-size: 16px;">Any variables declared in PHP must begin with a dollar sign ($), followed by the variable name.	</li>
+	<li style="font-family:times new roman; font-size: 16px;">A variable can have long descriptive names (like $factorial, $even_nos) or short names (like $n or $f or $x)</li>
+	<li style="font-family:times new roman; font-size: 16px;">A variable name can only contain alphanumeric characters and underscores (i.e., ‘a-z’, ‘A-Z’, ‘0-9 and ‘_’) in their name.</li>
+	<li style="font-family:times new roman; font-size: 16px;">Assignment of variables are done with assignment operator, “equal to (=)”. The variable names are on the left of equal and the expression or values are to the right of the assignment operator ‘=’.</li>
+	<li style="font-family:times new roman; font-size: 16px;">One must keep in mind that variable names in PHP names must start with a letter or underscore and no numbers.</li>
+	<li style="font-family:times new roman; font-size: 16px;">PHP is a loosely typed language and we do not require to declare the data types of variables, rather PHP assumes it automatically by analyzing the values. Same happens while conversion.</li>
+	<li style="font-family:times new roman; font-size: 16px;">PHP variables are case-sensitive, i.e., $sum and $SUM are treated differently.</li>
+	</ul>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex :</p> 
+	<pre class="CodeBox">
+	<span class="VariableName">$variable_name</span>=<span class="VariableValue">value</span>
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example1 :</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="Comment">// These are all valid declarations</span>
+	<span class="VariableName">$val</span><span class="Expression"> = </span><span class="VariableValue">4</span><span class="Expression">;</span>
+	<span class="VariableName">$v_x</span><span class="Expression"> = </span><span class="VariableValue">5</span><span class="Expression">;</span>
+	<span class="VariableName">$str</span><span class="Expression"> = </span><span class="VariableValue">hello</span><span class="Expression">;</span>
+	<span class="VariableName">$_str1</span><span class="Expression"> = </span><span class="VariableValue">world</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "val is : "</span>.<span class="VariableName">$val</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "v_x is : "</span>.<span class="VariableName">$v_x</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "str is : "</span>.<span class="VariableName">$str</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "_str1 is : "</span>.<span class="VariableName">$_str1</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;val is : 4</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v_x is : 5</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str is : hello</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_str1 is : world</span>
+		</div>
+		
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example2 :</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>			
+	<span class="Comment">// This is an invalid declaration as it  
+	// begins with a number </span>
+	<span class="VariableName">$10_val</span><span class="Expression"> = </span><span class="VariableValue">4</span><span class="Expression">;</span>
+	<span class="Comment">// This is also invalid as it contains  
+	// special character other than _ </span>
+	<span class="VariableName">$f.d</span><span class="Expression"> = </span><span class="VariableValue">hello</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "10_val : "</span>.<span class="VariableName">$10_val</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "f.d : "</span>.<span class="VariableName">$f.d</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PHP Parse error:  syntax error, unexpected '10' (T_LNUMBER), expecting variable (T_VARIABLE) or '{' or '$' in /home/c5ca7a05d53520c1cc9ce4cfa633f6d9.php on line 4</span>
+	</div>
+	
+	
+		
+</body>
+</html>

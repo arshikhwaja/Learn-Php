@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP If Else</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	PHP if else statement is used to test condition. There are various ways to use if statement in PHP.</p>
+	<ul>
+	<li>if</li>
+	<li>if-else</li>
+	<li>if-else-if</li>
+	<li>nested if</li>
+	</ul>
+	<p style="font-size: 17px; font-weight: bold; color:#2C5389 ">PHP If Statement</p>	
+	<p style="font-size:16px">PHP if statement allows conditional execution of code. It is executed if condition is true.
+	<br>If statement is used to executes the block of code exist inside the if statement only if the specified condition is true.</p>	
+		<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="Method">if</span>(Condition){
+	<span class="Comment">//Code to be executed</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 :</p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="VariableName">$a</span>=<span class="VariableValue">4<span class="Expression">;</span>
+	<span class="Method">if</span>(<span class="VariableName">$a</span><10)<span class="Expression">;</span>{
+	<span class="Method">echo</span><span class="VariableName"> $a</span>.<span class="String">" is less than 10!"</span><span class="Expression">;</span>
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 is less than 10</span>
+		</div>
+		
+	<p style="font-size: 17px; font-weight: bold; color:#2C5389 ">PHP If Else Statement</p>	
+	<p style="font-size:16px">PHP if-else statement is executed whether condition is true or false.
+	<br>If-else statement is slightly different from if statement. It executes one block of code if the specified condition is true and another block of code if the condition is false.</p>	
+		<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="Method">if</span>(Condition){
+	<span class="Comment">//Code to be executed is true</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="Method">else</span>{
+	<span class="Comment">//Code to be executed if false</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 :</p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="VariableName">$a</span>=<span class="VariableValue">15<span class="Expression">;</span>
+	<span class="Method">if</span>(<span class="VariableName">$a</span><=10)<span class="Expression">;</span>{
+	<span class="Method">echo</span><span class="VariableName"> $a</span>.<span class="String">" is less than 10!"</span><span class="Expression">;</span>
+	}
+	<span class="Method">else</span>{
+	<span class="Method">echo</span><span class="VariableName"> $a</span>.<span class="String">" is greater than 10!"</span><span class="Expression">;</span>
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 is less than 10</span>
+		</div>
+		
+	<p style="font-size: 17px; font-weight: bold; color:#2C5389 ">PHP If Else If Statement</p>	
+	<p style="font-size:16px">The PHP if-else-if is a special statement used to combine multiple if?.else statements. So, we can check multiple conditions using this statement.</p>	
+		<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="Method">if</span>(Condition1){
+	<span class="Comment">//Code to be executed if condition1 is true </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="Method">elseif(Condition2)</span>{
+	<span class="Comment">////code to be executed if condition2 is true </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="Method">elseif(Condition3)</span>{
+	<span class="Comment">////code to be executed if condition3 is true </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	......
+	<span class="Method">else</span>{
+	<span class="Comment">//Code to be executed if false</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 :</p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="VariableName">$a</span>=<span class="VariableValue">15<span class="Expression">;</span>
+	<span class="VariableName">$b</span>=<span class="VariableValue">5<span class="Expression">;</span>
+	<span class="VariableName">$c</span>=<span class="VariableValue">10<span class="Expression">;</span>
+	<span class="Method">if</span>(<span class="VariableName">$a</span>><span class="VariableName">$b</span>&&<span class="VariableName">$a</span>><span class="VariableName">$c</span>){
+	<span class="Method">echo</span><span class="VariableName"> $a</span>.<span class="String">" is greatest!"</span><span class="Expression">;</span>
+	}
+	<span class="Method">elseif</span>(<span class="VariableName">$b</span>><span class="VariableName">$c</span>){
+	<span class="Method">echo</span><span class="VariableName"> $b</span>.<span class="String">" is greatest!"</span><span class="Expression">;</span>
+	}
+	<span class="Method">else</span>{
+	<span class="Method">echo</span><span class="VariableName"> $c</span>.<span class="String">" is greatest!"</span><span class="Expression">;</span>
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15 is greatest!</span>
+		</div>
+		
+	<p style="font-size: 17px; font-weight: bold; color:#2C5389 ">PHP nested if Statement</p>	
+	<p style="font-size:16px">The nested if statement contains the if block inside another if block. The inner if statement executes only when specified condition in outer if statement is true.</p>	
+		<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="Method">if(Condition1)</span>{
+	<span class="Comment">//Code to be executed if condition is true </span>
+	<span class="Method">if(Condition2)</span>{
+	<span class="Comment">////code to be executed if condition is true </span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 :</p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="VariableName">$age</span>=<span class="VariableValue">20<span class="Expression">;</span>
+	<span class="VariableName">$nationality</span>=<span class="VariableValue">"Indian"<span class="Expression">;</span>
+	<span class="Method">if</span>(<span class="VariableName">$nationality</span>==<span class="VariableString">"Indian"</span>){
+	<span class="Method">echo</span><span class="String"> "Eligible to give vote!"</span><span class="Expression">;</span>
+	}
+	<span class="Method">else</span>{
+	<span class="Method">echo</span><span class="String"> "Not eligible to give vote!"</span><span class="Expression">;</span>
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eligible to give vote!</span>
+	</div>
+</body>
+</html>

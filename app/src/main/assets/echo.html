@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Echo</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	In PHP ‘echo’ statement is a language construct and never behaves like a function, hence no parenthesis required. The end of echo statement is identified by the semi-colon (‘;’).
+	We can use ‘echo’ to output strings or variables. Below are some of the usage of echo statement in PHP:</p>
+	<ul>
+	<li style="font-family:times new roman; font-size: 16px;"><b>Displaying Strings:</b> We can simply use the keyword echo followed by the string to be displayed withing quotes. Below example shows how to display strings with PHP:
+	<br><br>echo1.php
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="Method">echo</span><span class="String"> "Hello,This is a display string example!"</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello,This is a display string example!</span>
+		</div>
+	</li><br>
+	
+	<li style="font-family:times new roman; font-size: 16px;"><b>Displaying Strings as multiple arguments:</b> We can pass multiple string arguments to the echo statement instead of single string argument, separating them by comma (‘,’) 
+	operator. For example, if we have two strings say “Hello” and “World” then we can pass them as (“Hello”,”World”). Below example shows how to do this:
+	<br><br>echo2.php
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="Method">echo</span><span class="String"> "Multiple ","argument ","string!"</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Multiple ","argument ","string!"</span>
+		</div>
+	</li><br>
+	
+	<li style="font-family:times new roman; font-size: 16px;"><b>Displaying Variables:</b> Displaying variables with echo statement is also as easy as displaying normal strings. Below example shows different ways to display variables with the help of PHP echo statement:-
+	<br><br>echo3.php
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>				
+	<span class="VariableName">$num1</span><span class="Expression"> = </span><span class="VariableValue">4</span><span class="Expression">;</span>
+	<span class="VariableName">$num2</span><span class="Expression"> = </span><span class="VariableValue">5</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "Sum is : "</span>.<span class="VariableName">$num1</span>+<span class="VariableName">$num2</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sum is : 9</span>
+		</div>
+	</li>
+	</ul>
+	
+</body>
+</html>

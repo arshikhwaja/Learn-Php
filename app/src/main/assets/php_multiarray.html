@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Multidimensional Arrays</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	
+	Multi-dimensional arrays are such type of arrays which stores an another array at each index instead of single element. In other words, define multi-dimensional arrays as array of arrays. As the name suggests, every element in this array can be an array and they can also hold other sub-arrays within. Arrays or sub-arrays in multidimensional arrays can be accessed using multiple dimensions.
+	</b>
+	<br><br>
+	
+	<b>Syntax:</b>
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	array ( 
+	array (elements...),
+	array (elements...),
+	 ...)
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	Let's see a simple example of PHP Multi-dimensional Arrays.
+	File: myarr.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method"> &nbsp $myarray = array(array("Ankit", "Ram", "Shyam"),array("Unnao", "Trichy", "Kanpur")); <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp print_r</span><span class="String">($myarray)</span><span class="Expression">;</span> 
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+				Array
+(
+    [0] => Array
+        (
+            [0] => Ankit
+            [1] => Ram
+            [2] => Shyam
+        )
+
+    [1] => Array
+        (
+            [0] => Unnao
+            [1] => Trichy
+            [2] => Kanpur
+        )
+
+)</span><br />
+		</div>
+		
+		
+		
+		

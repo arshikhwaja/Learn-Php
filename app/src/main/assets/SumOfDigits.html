@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Sum Of Digits</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take a number</li>
+	<li>Divide the number by 10</li>
+	<li>Add the remainder to a variable</li>
+	<li>Repeat the process untill remainder is 0</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="VariableName">$num</span><span class="Expression"> = </span><span class="VariableValue">1234</span><span class="Expression">;</span>
+<span class="VariableName">$sum</span><span class="Expression"> = </span><span class="VariableValue">0</span><span class="Expression">;</span>
+<span class="VariableName">$rem</span><span class="Expression"> = </span><span class="VariableValue">0</span><span class="Expression">;</span>
+<span class="KeyWord">for</span><span class="Special">(</span><span class="VariableName">$i</span><span class="Expression">=</span><span class="VariableValue">0</span><span class="Special">;</span><span class="VariableName">$i</span><span class="Expression"><=</span><span class="Method">strlen</span><span class="Special">(</span><span class="VariableName">$num</span><span class="Special">);</span><span class="VariableName">$i++</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="VariableName"> $rem</span><span class="Expression">=</span><span class="VariableName">$num</span><span class="Expression">%</span><span class="VariableValue">10</span><span class="Expression">;</span>
+<span class="VariableName"> $sum</span><span class="Expression">+=</span><span class="VariableName">$rem</span><span class="Expression">;</span>	
+<span class="VariableName"> $num</span><span class="Expression">/=</span><span class="VariableValue">10</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="Method">echo</span><span class="String">"Sum of digits 1234 is "</span><span class="Answer">.$sum</span><span class="Expression">;</span>
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;Sum of digits 1234 is 10</span><br />
+		</div>
+
+</body>
+</html>

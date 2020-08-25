@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Function</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	A function is a block of statements that can be used repeatedly in a program.It can take input as argument list and return value.A function will not execute automatically when a page loads.
+	A function will be executed by a call to the function.There are thousands of built in functions in PHP.<br><b>Note:A function name must start with a letter or an underscore. Function names are NOT case-sensitive.</b>
+	<br><br>
+	
+	<b>Syntax:</b>
+	
+
+	
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+		function functionName() 
+		{
+			//code to be executed;
+		}
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	Let's see a simple example of PHP functions where we are printing a message through a function.
+	File: myfunc.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">   function myfunction()<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspecho</span><span class="String"> "Hello Everyone!"</span><span class="Expression">;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspmyfunction();</span>
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello Everyone!</span><br />
+		</div>
+		
+		<br><br>
+		
+		
+	
+		
+		
+		<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Return Statement</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	To let a function return a value,we use the return statement.
+	<br><br><b>Syntax:</b>
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	
+		function functionName(para1,para2,..paran) 
+		{
+			//code to be executed;
+			return;
+		}
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	Let's see a simple example of PHP functions where we are returning addition of two nos using return statement.
+	File: myfunc1.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">   function myfunction(int $x, int $y)<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn</span><span class="String"> $a+$b</span><span class="Expression">;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspmyfunction(4,5);</span>
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9</span><br />
+		</div>
+		
+		<br><br>
+		<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Calling A Function</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	A function is called by using name of the function,which is followed by parameters written in parenthesis.<br>
+	<br>
+	
+	<b>Syntax:</b>
+	
+
+	
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+		function functionName() 
+		{
+			//code to be executed;
+		}
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	Let's see a simple example of PHP functions where we are printing a message through a function.
+	File: myfunc.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">   function myfunction()<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspecho</span><span class="String"> "Hello Everyone!"</span><span class="Expression">;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspmyfunction();</span>
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello Everyone!</span><br />
+		</div>
+		<br><br>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Function with Arguments</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	Information can be passed to functions through arguments. An argument is just like a variable.
+
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+
+<br><br><b>Syntax:</b>
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	
+		function functionName(para1,para2,..paran) 
+		{
+			//code to be executed;
+			
+		}
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	The following example has a function with one argument ($fname). When the familyName() function is called, we also pass along a name (e.g. Jack), and the name is used inside the function, which outputs several different first names, but an equal last name.
+	File: myfunc1.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">   function myfunction($fname)<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspecho</span><span class="String"> $fname."David"</span><span class="Expression">;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspmyfunction(John);</span>
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John David</span><br />
+		</div>
+</body>
+</html>

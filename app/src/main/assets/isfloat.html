@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP is_bool() function</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	By using this function, we can check that the input value is float or not. This function was introduced in PHP 4.0.</p>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex :</p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="Method">bool</span> is_float(mixed $var)
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Parameter:<br>&nbsp;&nbsp;&nbsp;&nbsp;
+	<b>var_name:</b> The variable being evaluated and it is compulsory.</p> 
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Returns:<br>&nbsp;&nbsp;&nbsp;&nbsp;
+	The is_float() function returns TRUE if the var_name is float, otherwise false.</p> 
+	
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 :</p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="VariableName">$a</span>=<span class="Keyword">4<span class="Expression">;</span>
+	<span class="Method">echo</span> <span class="Keyword">is_float</span>(<span class="VariableName">$a</span>)<span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</span>
+		</div>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 2 :</p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="VariableName">$a</span>=<span class="Keyword">5.4<span class="Expression">;</span>
+	<span class="Method">is</span>(<span class="Method">is_float</span>(<span class="VariableName">$a</span>){
+	<span class="Method">echo</span> <span class="VariableName">$a</span>.<span class="String">" is float number!"</span><span class="Expression">;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="Method">else</span>{
+		<span class="Method">echo</span> <span class="VariableName">$a</span>.<span class="String">" is not float number!"</span><span class="Expression">;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.4 is an float number!</span>
+		</div>
+</body>
+</html>

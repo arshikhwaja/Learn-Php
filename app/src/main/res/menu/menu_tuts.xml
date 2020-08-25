@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/func"
+        android:title="1.PHP Function"/>
+    <item
+        android:id="@+id/para"
+        android:title="2.PHP Parameterized"/>
+    <item
+        android:id="@+id/cbv"
+        android:title="3.Call By Value"/>
+    <item
+        android:id="@+id/cbr"
+        android:title="4.PHP Call By Reference"/>
+    <item
+        android:id="@+id/davf"
+        android:title="5.Default Argument Value Function"/>
+    <item
+        android:id="@+id/vaf"
+        android:title="6.Variable Argument Function"/>
+    <item
+        android:id="@+id/recursivef"
+        android:title="7.PHP Recursive Function"/>
+    <item
+        android:id="@+id/arr"
+        android:title="8.PHP Arrays"/>
+    <item
+        android:id="@+id/indexarr"
+        android:title="9.PHP Indexed Array"/>
+    <item
+        android:id="@+id/assvarr"
+        android:title="10.PHP Associatve Array"/>
+    <item
+        android:id="@+id/mularr"
+        android:title="11.PHP Multidimensional Array"/>
+    <item
+        android:id="@+id/arrfunctions"
+        android:title="12.PHP Array Functions"/>
+    <item
+        android:id="@+id/str"
+        android:title="13.PHP String"
+        />
+    <item
+        android:id="@+id/strfunc"
+        android:title="14.PHP String Functions"
+        />
+    <item
+        android:id="@+id/math"
+        android:title="15.PHP Math"
+        />
+    <item
+        android:id="@+id/formhanlg"
+        android:title="16.PHP Form Handling"
+        />
+    <item
+        android:id="@+id/includefile"
+        android:title="17.PHP Include File"
+        />
+    <item
+        android:id="@+id/cookie"
+        android:title="18.PHP Cookie"
+        />
+    <item
+        android:id="@+id/session"
+        android:title="19.PHP Session"
+        />
+    <item
+        android:id="@+id/filehanlg"
+        android:title="20.PHP File Handling"
+        />
+    <item
+        android:id="@+id/openfile"
+        android:title="21.PHP Open File"
+        />
+    <item
+        android:id="@+id/readfile"
+        android:title="22.PHP Read File"
+        />
+    <item
+        android:id="@+id/writefile"
+        android:title="23.PHP Write File"
+        />
+    <item
+        android:id="@+id/appndfile"
+        android:title="24.PHP Append to File"
+        />
+    <item
+        android:id="@+id/delfile"
+        android:title="25.PHP Delete File"
+        />
+    <item
+        android:id="@+id/fileupload"
+        android:title="26.PHP File Upload"
+        />
+
+
+</menu>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Learn PHP</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">LOGIN</string>
+    <string name="not_registered">Not Register? </string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered">Already Registered? </string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

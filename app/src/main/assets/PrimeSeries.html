@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Prime Series</p><hr>		
+	</div>
+	<br>
+	<span style="font-family:times new roman,georgia,garamond,serif;font-size:14px;">A number which is only divisible by 1 and itself is called prime number.</span><br><br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take a number</li>
+	<li>Divide it by 2</li>
+	<li>If the remainder is 0, set flag 0 and break the loop</li>
+	<li>Print all the prime numbers</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>
+<span class="Method">echo</span><span class="String"> "Prime Series in first 20 numbers: &lt;br&gt; "</span><span class="Expression">;</span>				
+<span class="VariableName">$num</span><span class="Expression"> = </span><span class="VariableValue">20</span><span class="Expression">;</span>
+<span class="KeyWord">for</span><span class="Special">(</span><span class="VariableName">$i</span><span class="Expression">=</span><span class="VariableValue">2</span><span class="Special">; </span><span class="VariableName">$i</span><span class="Expression"><=</span><span class="VariableName">$num</span><span class="Special">; </span><span class="VariableName">$i++</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="VariableName">$flag</span><span class="Expression"> = </span><span class="VariableValue">1</span><span class="Expression">;</span>
+<span class="KeyWord">for</span><span class="Special">(</span><span class="VariableName">$n</span><span class="Expression">=</span><span class="VariableValue">2</span><span class="Special">; </span><span class="VariableName">$n</span><span class="Expression"><=</span><span class="VariableName">$i</span><span class="Special">; </span><span class="VariableName">$n++</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="Method"> if</span><span class="Special">(</span><span class="VariableName">$i</span><span class="Expression">%</span><span class="VariableName">$n</span><span class="Expression"> == </span><span class="VariableValue">0</span></span><span class="Special">)</span>
+<span class="Special"> {</span>
+<span class="VariableName">  $flag</span><span class="Expression"> = </span><span class="VariableValue">0</span><span class="Expression">;</span>
+<span class="KeyWord">  break;</span>
+<span class="Special"> }</span>
+<span class="Special">}</span>
+<span class="Method">if</span><span class="Special">(</span><span class="VariableName">$flag</span><span class="Expression"> == </span><span class="VariableValue">1</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="Method"> echo</span><span class="Answer"> $n.</span><span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="Special">}</span>
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp; Prime Series in first 20 numbers:</span><br />
+				<span>&nbsp;&nbsp; 2</span><br />
+				<span>&nbsp;&nbsp; 3</span><br />
+				<span>&nbsp;&nbsp; 5</span><br />
+				<span>&nbsp;&nbsp; 7</span><br />
+				<span>&nbsp;&nbsp; 11</span><br />
+				<span>&nbsp;&nbsp; 13</span><br />
+				<span>&nbsp;&nbsp; 17</span><br />
+				<span>&nbsp;&nbsp; 19</span><br />
+		</div>
+
+</body>
+</html>

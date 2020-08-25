@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Middle Pyramid</p><hr>
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take three loop, one for counter, second for printing space and third for printing stars</li>
+	<li>Execute the loop till the given condition and increement both the loop and decrement the loop that prints space</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="KeyWord">for</span><span class="Special">(</span><span class="VariableName">$i</span><span class="Expression">=</span><span class="VariableValue">0</span><span class="Special">; </span><span class="VariableName">$i</span><span class="Expression"><=</span><span class="VariableValue">5</span><span class="Special">; </span><span class="VariableName">$i++</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="KeyWord"> for</span><span class="Special">(</span><span class="VariableName">$j</span><span class="Expression">=</span><span class="VariableValue">5</span><span class="Special">; </span><span class="VariableName">$j</span><span class="Expression">>=</span><span class="VariableName">$i</span><span class="Special">; </span><span class="VariableName">$j--</span><span class="Special">)</span>
+<span class="Special"> {</span>
+<span class="Method">  echo</span><span class="String"> "  "</span><span class="Expression">;</span>
+<span class="Special"> }</span>
+<span class="KeyWord"> for</span><span class="Special">(</span><span class="VariableName">$k</span><span class="Expression">=</span><span class="VariableValue">1</span><span class="Special">; </span><span class="VariableName">$k</span><span class="Expression"><=</span><span class="VariableValue">$i</span><span class="Special">; </span><span class="VariableName">$k++</span><span class="Special">)</span>
+<span class="Special"> {</span>
+<span class="Method">  echo</span><span class="String"> "* "</span><span class="Expression">;</span>
+<span class="Special"> }</span>
+<span class="Method"> echo</span><span class="String"> "&lt;br&gt;"</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span><br />
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* *</span><br />
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;* * *</span><br />
+				<span>&nbsp;&nbsp;&nbsp;* * * *</span><br />
+				<span>&nbsp;&nbsp;* * * * *</span><br />
+			</div>
+</body>
+</html>

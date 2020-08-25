@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Palindrome String</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take a string</li>
+	<li>Reverse the input string</li>
+	<li>Compare the two string</li>
+	<li>If equal, it means string is palindrome</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="VariableName">$string</span><span class="Expression"> = </span><span class="VariableValue">"madam"</span><span class="Expression">;</span>
+<span class="Method">if</span><span class="Special">(</span><span class="Method">strrev</span><span class="Special">(</span><span class="VariableName">$string</span><span class="Special">)</span><span class="Expression"> == </span><span class="VariableName">$string</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="Method"> echo</span><span class="Answer"> $string.</span><span class="String">" is a palindrome string"</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="Method">else</span>
+<span class="Special">{</span>
+<span class="Method"> echo</span><span class="Answer"> $string.</span><span class="String">" is not a palindrome string"</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="tag">&#63;&gt;</span>
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;madam is a palindrome string</span><br />
+		</div>
+</body>
+</html>

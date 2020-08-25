@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP print statement</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	The PHP print statement is similar to the echo statement and can be used alternative to echo at many times.It is also language construct and so we may not use parenthesis : print or print(). The main difference between the print and echo statement is that print statement can have only one argument at a time and thus can print a single string. Also, print statement always returns a value 1.
+Like echo, print statement can also be used to print strings and variables. Below are some examples of using print statement in PHP:</p>
+	<ul>
+	<li style="font-family:times new roman; font-size: 16px;"><b>Displaying String of Text: </b> We can display strings with print statement in the same way we did with echo statements. The only difference is we can not display multiple strings separated by comma(,) with a single print statement. Below example shows how to display strings with the help of PHP print statement:-
+	<br><br>print1.php
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="Method">print</span><span class="String"> "Hello, world!"</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, world!</span>
+		</div>
+	</li><br>
+	
+	<li style="font-family:times new roman; font-size: 16px;"><b>Displaying Variables:</b> Displaying variables with print statement is also same as that of echo statement. The example below shows how to display variables with the help of PHP print statement:-
+	<br><br>echo3.php
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>				
+	<span class="VariableName">$num1</span><span class="Expression"> = </span><span class="VariableValue">4</span><span class="Expression">;</span>
+	<span class="VariableName">$num2</span><span class="Expression"> = </span><span class="VariableValue">5</span><span class="Expression">;</span>
+	<span class="Method">print</span><span class="String"> "Sum is : "</span>.<span class="VariableName">$num1</span>+<span class="VariableName">$num2</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sum is : 9</span>
+		</div>
+	</li>
+	</ul>
+	
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Constant</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	PHP constants are name or identifier that can't be changed during the execution of the script except for magic constants, which are not really constants. PHP constants can be defined by 2 ways:</p>
+	<ol type="1">
+	<li style="font-family:times new roman; font-size: 16px;">Using define() function</li>
+	<li style="font-family:times new roman; font-size: 16px;">Using const keyword</li>
+	</ol>
+	<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Constant: define()</p><hr>
+	<p style="font-size:16px">
+	Use the define() function to create a constant. It defines constant at run time. Let's see the syntax of define() function in PHP.</p>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex :</p> 
+	<pre class="CodeBox">
+	<span class="VariableName">$variable_name(name,value,case-insensitive)</span>
+	</pre>
+	<ol type="1">
+	<li style="font-family:times new roman; font-size: 16px;"><b>name:</b> It specifies the constant name.</li>
+	<li style="font-family:times new roman; font-size: 16px;"><b>value:</b> It specifies the constant value</li>
+		<li style="font-family:times new roman; font-size: 16px;"><b>case-insensitive:</b> Specifies whether a constant is case-insensitive. Default value is false. It means it is case sensitive by default.</li>
+	</ol>
+	<p style="font-size:16px">Let's see the example to define PHP constant using define().</p>
+		<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 :</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="def">define</span>(<span class="String"> "MESSAGE"</span>,<span class="String"> "Hello PHP!"</span>
+	<span class="Method">echo<span class="VariableName">MESSAGE</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello PHP!</span>
+		</div>
+	
+	<p style="font-size:16px">Create a constant with case-insensitive name:</p>
+		<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 2 :</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="def">define</span>(<span class="String"> "MESSAGE"</span>,<span class="String"> "Hello PHP!"</span>,<span class="Keyword">true</span>
+	<span class="Method">echo<span class="VariableName">MESSAGE</span><span class="Expression">;</span>
+	<span class="Method">echo<span class="VariableName">message</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello PHP!</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello PHP!</span>
+		</div>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 3 :</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="def">define</span>(<span class="String"> "MESSAGE"</span>,<span class="String"> "Hello PHP!"</span>,<span class="Keyword">false</span>
+	<span class="Method">echo<span class="VariableName">MESSAGE</span><span class="Expression">;</span>
+	<span class="Method">echo<span class="VariableName">message</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello JavaTpoint PHP<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notice: Use of undefined constant message - assumed 'message' in C:\wamp\www\vconstant3.php on line 4 message</span>
+	</div>
+
+	<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Constant: const keyword</p><hr>
+	<p style="font-size:16px">
+	PHP introduced a keyword const to create a constant. The const keyword defines constants at compile time. It is a language construct, not a function. The constant defined using const keyword are case-sensitive.</p>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 4 :</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="Keyword">const</span>(<span class="String"> MESSAGE</span>=<span class="String"> "Hello PHP!"</span>
+	<span class="Method">echo<span class="VariableName"> MESSAGE</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello PHP!</span>
+		</div>
+	
+</body>
+</html>

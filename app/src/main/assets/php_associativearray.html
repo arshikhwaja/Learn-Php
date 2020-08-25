@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Associative Arrays</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	
+	Associative arrays are used to store key value pairs. For example, to store the marks of different subject of a student in an array, a numerically indexed array would not be the best choice. Instead, we could use the respective subject’s names as the keys in our associative array, and the value would be their respective marks gained.
+	Traversing the Associative Array:
+We can traverse associative arrays using loops. We can loop through the associative array in two ways. First by using for loop and secondly by using foreach.
+	</b>
+	<br><br>
+	
+	<b>Syntax:</b>
+	
+
+	
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+		$names = array("key1"=>"value1", "key2"=>"value2");  
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	Let's see a simple example of PHP Associative Arrays.
+	File: myarr.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method"> &nbsp $student_one = array("Maths"=>95, "Physics"=>90,"Chemistry"=>96, "English"=>93,"Computer"=>98);  ; <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspforeach ($student_one as $subject => $marks){<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspecho </span><span class="String"> "Student one got ".$marks." in ".$subject."\n" </span><span class="Expression">;</span> 
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspStudent one got 95 in Maths
+<br>&nbsp &nbsp &nbsp &nbsp Student one got 90 in Physics
+<br>&nbsp &nbsp &nbsp &nbsp Student one got 96 in Chemistry
+<br>&nbsp &nbsp &nbsp &nbsp Student one got 93 in English
+<br>&nbsp &nbsp &nbsp &nbsp Student one got 98 in Computer</span><br />
+		</div>
+		
+		
+		
+		

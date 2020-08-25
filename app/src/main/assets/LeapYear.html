@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Leap Year</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take a year</li>
+	<li>Divide it by 4</li>
+	<li>If the remainder is 0, print year is a leap year</li>
+	<li>Otherwise print year is not a leap year</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="VariableName">$year</span><span class="Expression"> = </span><span class="VariableValue">2016</span><span class="Expression">;</span>
+<span class="Method">if</span><span class="Special">(</span><span class="VariableName">$year</span><span class="Expression">%4==0</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="Method"> echo</span><span class="Answer"> $year.</span><span class="String">" is a leap year"</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="Method">else</span>
+<span class="Special">{</span>
+<span class="Method"> echo</span><span class="Answer"> $year.</span><span class="String">" is not a leap year"</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp; 2016 is a leap year</span><br />
+		</div>
+
+</body>
+</html>

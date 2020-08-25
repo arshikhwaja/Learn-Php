@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+
+
+<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Call By Reference</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	We can pass a variable by reference to a function so that the function can modify the variable's value.
+<br><br><b>Syntax:</b>
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	
+		function functionName(&a) 
+		{
+			return $a++;
+
+		}
+		$a=//value to be assigned
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	The following example has a function with one argument (&a). When the function is called, the value of a is changed.
+	File: callbyr.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">   function myfunction(&a)<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspreturn</span><span class="String"> $a++</span><span class="Expression">;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp} <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $a=4;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp myfunction($a);<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp echo $a;</span>
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</span><br />
+		</div>
+		</body>
+</html>
+		

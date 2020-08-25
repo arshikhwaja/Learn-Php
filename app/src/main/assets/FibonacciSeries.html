@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Fibonacci Series</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Initialize the first and second number as 0 and 1</li>
+	<li>Print first and second number</li>
+	<li>From the next number, start your loop. So third number will be the sum of the first two numbers</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>
+<span class="VariableName">$num</span><span class="Expression"> = </span><span class="VariableValue">0</span><span class="Expression">;</span>
+<span class="VariableName">$a</span><span class="Expression"> = </span><span class="VariableValue">0</span><span class="Expression">;</span>
+<span class="VariableName">$b</span><span class="Expression"> = </span><span class="VariableValue">1</span><span class="Expression">;</span>
+<span class="Method">echo</span><span class="Answer"> $a.</span><span class="String">&lt;br&gt;</span><span class="Answer">.$b</span><span class="Expression">;</span>
+<span class="KeyWord">while</span><span class="Special">(</span><span class="VariableName">$num</span><span class="Expression"><</span><span class="VariableValue">8</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="VariableName"> $c</span><span class="Expression"> = </span><span class="VariableName">$a</span><span class="Expression"> + </span><span class="VariableName">$b</span><span class="Expression">;</span>
+<span class="Method"> echo</span><span class="String">"&lt;br&gt;"</span><span class="Answer">.$c</span><span class="Expression">;
+<span class="VariableName"> $a</span><span class="Expression"> = </span><span class="VariableName">$b</span><span class="Expression">;</span>	
+<span class="VariableName"> $b</span><span class="Expression"> = </span><span class="VariableName">$c</span><span class="Expression">;</span>
+<span class="VariableName"> $num</span><span class="Expression"> += </span><span class="VariableValue">1</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="tag">&#63;&gt;</span>	
+	</span></pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;0</span><br/>
+				<span>&nbsp;&nbsp;1</span><br/>
+				<span>&nbsp;&nbsp;1</span><br/>
+				<span>&nbsp;&nbsp;2</span><br/>
+				<span>&nbsp;&nbsp;3</span><br/>
+				<span>&nbsp;&nbsp;5</span><br/>
+				<span>&nbsp;&nbsp;8</span><br/>
+				<span>&nbsp;&nbsp;13</span><br/>
+				<span>&nbsp;&nbsp;21</span><br/>
+				<span>&nbsp;&nbsp;34</span><br/>
+				
+		</div>
+
+</body>
+</html>

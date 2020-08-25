@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Reverse Of a String</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Assign the string to a variable</li>
+	<li>Calculate the length of string</li>
+	<li>Declare a variable to hold reverse string</li>
+	<li>Run for loop</li>
+	<li>Concatenate string inside for loop</li>
+	<li>Display reverse string</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="VariableName">$string</span><span class="Expression"> = </span><span class="VariableValue">"Jupiter"</span><span class="Expression">;</span>
+<span class="VariableName">$length</span><span class="Expression"> = </span><span class="Method">strlen</span><span class="Special">(</span><span class="VariableName">$string</span><span class="Special">);</span>
+<span class="KeyWord">for</span><span class="Special">(</span><span class="VariableName">$i</span><span class="Expression">=</span><span class="Special">(</span><span class="VariableName">$length</span><span class="Expression"> - </span><span class="VariableValue">1</span><span class="Special">)</span><span class="Expression">;</span><span class="VariableName">$i</span><span class="Expression"> >= </span><span class="VariableValue">0</span><span class="Expression">;</span><span class="VariableName">$i--</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="Method"> echo</span><span class="Answer"> $string[$i]</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="tag">&#63;&gt;</span>
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp; retipuJ</span><br />
+		</div>
+</body>
+</html>

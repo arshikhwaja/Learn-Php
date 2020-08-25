@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP For Loop</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	PHP for loop can be used to traverse set of code for the specified number of times.
+	<br>It should be used if the number of iterations is known otherwise use while loop. This means for loop is used when you already know how many times you want to execute a block of code.
+	<br>It allows users to put all the loop related statements in one place. See in the syntax given below:</p>
+	
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="Method">for</span>(initialization; condition; increment/decrement){
+	<span class="Comment">//Code to be executed</span>
+	}
+	</pre>
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Parameter : </p> 
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;The php for loop is similar to the java/C/C++ for loop. The parameters of for loop have the following meanings:
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>initialization:</b> Initialize the loop counter value. The initial value of the for loop is done only once. This parameter is optional.
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>condition</b> Evaluate each iteration value. The loop continuously executes until the condition is false. If TRUE, the loop execution continues, otherwise the execution of the loop ends.
+	<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>Increment/decrement:</b> It increments or decrements the value of the variable.
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="Method">for</span>($i=1;$i<=10;$i++){
+	<span class="Method">echo</span><span class="String"> $i</span>
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 2 3 4 5 6 7 8 9 10</span>
+		</div>
+		
+	<p class="title">PHP Nested For Loop </p>
+	<p style="font-size:16px">
+	We can use for loop inside for loop in PHP, it is known as nested for loop. The inner for loop executes only when the outer for loop condition is found true.
+	<br>In case of inner or nested for loop, nested for loop is executed fully for one outer for loop. If outer for loop is to be executed for 3 times and inner for loop for 3 times, 
+	inner for loop will be executed 9 times (3 times for 1st outer loop, 3 times for 2nd outer loop and 3 times for 3rd outer loop).</p>
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Example 2: </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="Method">for</span>($i=1;$i<=3;$i++){
+	<span class="Method">for</span>($j=1;$j<=3;$j++){
+	<span class="Method">echo</span><span class="VariableName"> "$i $j&lt;&#63;br&#63;&gt;"</span><span class="Expression">;</span>
+	}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 1</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 2</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 3</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 1</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 2</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 3</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 1</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 2</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 3</span>
+		</div>
+	<p class="title">PHP For Each Loop </p>
+	<p style="font-size:16px">
+	PHP for each loop is used to traverse array elements.</p>
+	
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="Method">foreach</span>($array<span class="Method">as</span> $var{
+	<span class="Comment">//Code to be executed</span>
+	}
+	</pre>
+
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Example 3: </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="VariableName">$season</span>=<span class="Method">array</span>(<span class="String">"Summer"</span>,<span class="String">"Winter"</span>,<span class="String">"Spring"</span>,<span class="String">"Autumn"</span>)<span class="Expression">;</span>
+	<span class="Method">foreach</span>($season<span class="Method"> as</span> $str){
+	<span class="Method">echo</span><span class="String"> "Season is : $str"</span><span class="Expression">;</span>
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season is : Summer</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season is : Winter</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season is : Spring</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Season is : Autumn</span>
+		</div>
+</body>
+</html>

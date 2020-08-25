@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Install PHP</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	The $var (single dollar) is a normal variable with the name var that stores any value like string, integer, float, etc.<br>
+	The $$var (double dollar) is a reference variable that stores the value of the $variable inside it.<br>
+	To understand the difference better, let's see some examples.</p>
+		<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example1 :</p>
+
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="VariableName">$x</span><span class="Expression"> = </span><span class="VariableValue">abc</span><span class="Expression">;</span>
+	<span class="VariableName">$$x</span><span class="Expression"> = </span><span class="VariableValue">4</span><span class="Expression">;</span>
+	<span class="Method">echo<span class="VariableName">$x</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo<span class="VariableName">$$x</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo<span class="VariableName">$abc</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abc</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</span>
+		</div>
+	<p style="font-size:16px">
+	In the above example, we have assigned a value to the variable x as abc. Value of reference variable $$x is assigned as 200.<br>
+	Now we have printed the values $x, $$x and $abc.</p>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example2 :</p>
+	
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="VariableName">$x</span><span class="Expression"> = </span><span class="VariableValue">Maharashtra</span><span class="Expression">;</span>
+	<span class="VariableName">$$x</span><span class="Expression"> = </span><span class="VariableValue">Mumbai</span><span class="Expression">;</span>
+	<span class="Method">echo<span class="VariableName">$x</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo<span class="VariableName">$$x</span>.<span class="String">"&lt;br&gt;"</span><span class="Expression">;</span>
+	<span class="Method">echo</span><span class="String"> "Capital of $x is "</span>.<span class="VariableName">$xx</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maharashtra</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mumbai</span>
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Capital of Maharashtra is Mumbai</span>
+		</div>
+	<p style="font-size:16px">
+	In the above example, we have assigned a value to the variable x as U.P. Value of reference variable $$x is assigned as Lucknow.</p>
+
+	
+</body>
+</html>

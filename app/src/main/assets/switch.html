@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Switch</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	PHP switch statement is used to execute one statement from multiple conditions. It works like PHP if-else-if statement.</p>
+	<p style="font-size: 17px; font-weight: bold; color:#2C5389 ">Important points to be noticed about switch case:</p>	
+	<ol type="1">
+		<li>The default is an optional statement. Even it is not important, that default must always be the last statement.</li>
+		<li>There can be only one default in a switch statement. More than one default may lead to a Fatal error.</li>
+		<li>Each case can have a break statement, which is used to terminate the sequence of statement.</li>
+		<li>The break statement is optional to use in switch. If break is not used, all the statements will execute after finding matched case value.</li>
+		<li>PHP allows you to use number, character, string, as well as functions in switch expression.</li>
+		<li>Nesting of switch statements is allowed, but it makes the program more complex and less readable.</li>
+		<li>You can use semicolon (;) instead of colon (:). It will not generate any error.</li>
+	</ol>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>	
+	<span class="Method">switch</span>(expression){	
+	<span class="Method">case</span> value1:
+	<span class="Comment">//code to be executed </span>
+	<span class="Method">break;</span>
+	<span class="Method">case</span> value2:
+	<span class="Comment">//code to be executed </span>
+	<span class="Method">break;</span>
+	.......
+	<span class="">default:</span>
+	<span class="Comment">//code to be executed if all cases are not matched;</span>
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="VariableName">$num</span>=<span class="VariableValue">4</span>
+	<span class="Method">switch</span>(<span class="VariableName">$num</span>){	
+	<span class="Method">case</span> 2:
+	<span class="Method">echo</span><span class="String"> "Number is equal to 2!"</span><span class="Expression">;</span>   
+	<span class="Method">break;</span>
+	<span class="Method">case</span> 4:
+	<span class="Method">echo</span><span class="String"> "Number is equal to 4!"</span><span class="Expression">;</span>   
+	<span class="Method">break;</span>
+	<span class="Method">case</span> 6:
+	<span class="Method">echo</span><span class="String"> "Number is equal to 6!"</span><span class="Expression">;</span>   
+	<span class="Method">break;</span>
+	<span class="">default:</span>
+	<span class="Method">echo</span><span class="String"> "Number is not equal to 2,4 and 6!"</span><span class="Expression">;</span>   
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number is equal to 4!</span>
+		</div>
+		
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Example 2: </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="VariableName">$ch</span>=<span class="VariableValue">a</span>
+	<span class="Method">switch</span>(<span class="VariableName">$ch</span>){	
+	<span class="Method">case</span> 'a':
+	<span class="Method">echo</span><span class="String"> "Choice is a!"</span><span class="Expression">;</span>   
+	<span class="Method">break;</span>
+	<span class="Method">case</span> 'b':
+	<span class="Method">echo</span><span class="String"> "Choice is b!"</span><span class="Expression">;</span>   
+	<span class="Method">break;</span>
+	<span class="Method">case</span> 'c':
+	<span class="Method">echo</span><span class="String"> "Choice is c!"</span><span class="Expression">;</span>   
+	<span class="Method">break;</span>
+	<span class="Method">default:</span>
+	<span class="Method">echo</span><span class="String"> "Invalid Choice!"</span><span class="Expression">;</span>   
+	}
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choice is a!</span>
+		</div>
+</body>
+</html>

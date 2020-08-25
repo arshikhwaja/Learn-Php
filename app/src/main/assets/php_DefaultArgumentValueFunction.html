@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+
+
+<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Default Argument Value Function</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	Information can be passed to functions through arguments. An argument is just like a variable.
+
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.PHP also allows you to
+assign default values to the parameters, so when we call the function without arguments then it will take the assigned value of the particular parameter.
+
+<br><br><b>Syntax:</b>
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	
+		function functionName(para1=10,para2,..paran) 
+		{
+			//code to be executed;
+			
+		}
+		functionName();
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	The following example has a function with one argument ($fname) which value has been assigned to it. When the familyName() function is called, it will return the full name.
+	File: myfunc1.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">   function myfunction($fname="John")<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspecho</span><span class="String"> $fname."David"</span><span class="Expression">;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspmyfunction();</span>
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John David</span><br />
+		</div>
+		</body>
+</html>
+		

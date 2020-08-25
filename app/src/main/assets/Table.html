@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Table Of a Number</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Define a number</li>
+	<li>Execute for loop</li>
+	<li>Multiply the number with for loop output</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>
+<span class="KeyWord">define</span><span class="Special">(</span><span class="VariableName">'a'</span><span class="Special">,</span><span class="VariableValue">7</span><span class="Special">)</span>
+<span class="KeyWord">for</span><span class="Special">(</span><span class="VariableName">$i</span><span class="Expression">=</span><span class="VariableValue">1</span><span class="Special">;</span><span class="VariableName">$i</span><span class="Expression"><=</span><span class="VariableValue">10</span><span class="Special">;</span><span class="VariableName">$i++</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="Method"> echo</span><span class="VariableName"> $i*a</span><span class="Expression">;</span>
+<span class="Method"> echo</span><span class="String"> '&lt;br&gt;'</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;7</span><br/>
+				<span>&nbsp;&nbsp;14</span><br/>
+				<span>&nbsp;&nbsp;21</span><br/>
+				<span>&nbsp;&nbsp;28</span><br/>
+				<span>&nbsp;&nbsp;35</span><br/>
+				<span>&nbsp;&nbsp;42</span><br/>
+				<span>&nbsp;&nbsp;49</span><br/>
+				<span>&nbsp;&nbsp;56</span><br/>
+				<span>&nbsp;&nbsp;63</span><br/>
+				<span>&nbsp;&nbsp;70</span><br/>
+				
+		</div>
+
+</body>
+</html>

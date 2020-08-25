@@ -1,0 +1,185 @@
+
+		body {
+		
+			border-radius: 10px;
+		}
+
+		ul {
+			list-style-type: circle;
+		}
+		
+		.tag{
+			color:#A29420;
+		}
+		
+		.VariableName {
+			color: #2C5389; 
+		}
+		.VariableValue{
+			color: #797A7E; 
+		}
+		.heading{
+			color:#285490 ;
+			font-family:times new roman,georgia,garamond,serif;
+			font-size: 17px;
+		}
+
+		.contentHolder {
+			margin: 4px;
+			margin-bottom: 6px;
+			background-color: #0e172a;
+			box-shadow: 4px 4px 0px 0px rgba(1,2,4,0.6);
+			height: auto;
+			border-radius: 10px;
+			padding: 5px;
+			padding-left: 10px;
+			margin-left: -3px;
+			margin-right: -3px;
+		}
+
+		.codeExample {
+			background-color: #090E2C ; 
+			margin: 2px;
+			box-shadow: 4px 4px 0px 0px rgba(1,2,4,0.6);
+			height: auto;
+			border-radius: 10px;
+			padding: 10px;
+			padding-left: 20px;
+		}
+
+		.mainHeading:before{
+		content: url(../image/main_heading.png);
+		margin-left: -40px;
+		}
+		.mainHeading{
+			color: #927d57;
+			font-size: 18px;
+		}
+
+		.subHeading:before{
+			content: url(../image/sub_heading.png);
+		    margin-left: -22px;
+		}
+
+		.subHeading{
+			color: #d0bb97;
+			font-size: 15px;
+		}
+
+		.point:before {
+			content: url(../image/point.png);
+			margin-left: -18px;
+		}
+		.point {
+			color: #d0bb97;
+			text-align: justify-all;
+			font-size: 13px;
+		}
+
+		.navBar {
+			  position: fixed;
+			  top: 0;
+			  left: 0;
+			  z-index: 1;
+			  width: 100%;
+			  height: 50px;
+			  background-color: #0e172a;
+			  border-radius: 5px;
+			  
+			  color: #be9b59;
+			  margin-top: 0.80px;
+
+		}
+
+		.navBar + .MyContainer {
+			padding-top: 45px;
+		}
+
+		.KeyWord {
+			color: #20AC3E;
+		}
+		.ClassName {
+			color: #d0bb97;
+		}
+		.Collon {
+			color: #35f81b;
+		}
+		
+		.Comment {
+			color: #9B2335;
+		}
+		.Def {
+			color: #006E6D;
+		}
+		.Method {
+			color: #17B31C;
+		}
+		.Special {
+			color: #D82C17;
+		}
+		.String {
+			color: #F37A0E;
+		}
+		.Answer{
+			color:#C21D56;
+		}
+		.Output {
+			background-color: #E0E4D1  ;
+			color: black;
+			font-size: 17px;
+			border-radius: 10px;
+			border-color:#2C5389 ;
+			border-style:solid;
+			padding-bottom: 20px;
+		}
+		.Expression {
+			color: grey;
+		}
+
+		.CodeBox {
+		  min-height: 10;
+		  max-height: 10;
+		  background-color:#E0E4D1  ;
+		  border-color:#2C5389  ;
+		  border-style:solid;
+		  border-radius: 10px;
+		  font-size:14px;
+		}
+		.Heading {
+			color: #1CB932;
+			font-size: 16px;
+		}
+
+		ul li {
+			color: black;
+			font-size: 14px;
+			font-family:Helvetica, sans-serif;			
+		}
+
+		img {
+			max-width: 90%;
+			max-height: 80%;
+		}
+		.html{
+			color: rgb(50, 50, 122);
+		}
+		.body{
+			color: rgb(36, 34, 34);
+		}
+		table, th, td {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+		}
+		th, td {
+  			padding: 5px;
+			text-align: left;
+			font-size: 16px;      
+		}
+		li{
+			font-size: 16px;
+		}
+		.title{
+			font-size: 17px;
+			color: rgb(44, 83, 137);
+			font-weight: bold;
+		}

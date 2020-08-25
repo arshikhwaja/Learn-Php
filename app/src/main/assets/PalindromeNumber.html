@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Palindrome Number</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take a number</li>
+	<li>Reverse the input number</li>
+	<li>Compare the two number</li>
+	<li>If equal, it means number is palindrome</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="VariableName">$num</span><span class="Expression"> = </span><span class="VariableValue">12121</span><span class="Expression">;</span>
+<span class="VariableName">$rev</span><span class="Expression"> = </span><span class="VariableValue">0</span><span class="Expression">;</span>
+<span class="VariableName">$x</span><span class="Expression"> = </span><span class="VariableName">$num</span><span class="Expression">;</span>
+<span class="KeyWord">while</span><span class="Special">(</span><span class="VariableName">$num</span><span class="Expression">></span><span class="VariableValue">0</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="VariableName"> $rem</span><span class="Expression"> = </span><span class="VariableName">$num</span><span class="Expression"> % </span><span class="VariableValue">10</span><span class="Expression">;</span>
+<span class="VariableName"> $rev</span><span class="Expression"> *= </span><span class="VariableValue">10</span><span class="Expression"> + </span><span class="VariableName">$rem</span><span class="Expression">;</span>	
+<span class="VariableName"> $num</span><span class="Expression"> /= </span><span class="VariableValue">10</span><span class="Expression">;</span>
+<span class="Special">}</span>
+<span class="KeyWord">if</span><span class="Special">(</span><span class="VariableName">$x</span><span class="Expression"> == </span><span class="VariableName">$rev</span><span class="Expression">)</span>
+<span class="Method"> echo</span><span class="Answer"> $x. </span><span class="String">" is a palindrome number "</span><span class="Expression">;</span>
+<span class="KeyWord">else</span>
+<span class="Method"> echo</span><span class="Answer"> $x. </span><span class="String">" is not a palindrome number "</span><span class="Expression">;</span>	
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;12121 is a palindrome number</span><br />
+		</div>
+</body>
+</html>

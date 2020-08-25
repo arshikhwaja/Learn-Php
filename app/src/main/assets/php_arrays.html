@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Arrays</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	Arrays in PHP is a type of data structure that allows us to store multiple elements of similar data type under a single variable thereby saving us the effort of creating a different variable for every data. The arrays are helpful to create a list of elements of similar types, which can be accessed using their index or key. An array is created using an array() function in PHP.
+
+There are basically three types of arrays in PHP:
+
+<br>1.Indexed or Numeric Arrays: An array with a numeric index where values are stored linearly.
+<br>2.Associative Arrays: An array with a string index where instead of linear storage, each value can be assigned a specific key.
+<br>3.Multidimensional Arrays: An array which contains single or multiple array within it and can be accessed via multiple indices.</b>
+	<br><br>
+	
+	<b>Syntax:</b>
+	
+
+	
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+		$variable_name = array("element 1", "element 2", "element 3"); 
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	Let's see a simple example of PHP Arrays where we are storing five names and printing them accordingly .
+	File: myfunc.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">  $names = array("Zack", "Anthony", "Ram", "Salim", "Raghav");<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspecho</span><span class="String"> $names[3]</span><span class="Expression">;</span> 
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salim</span><br />
+		</div>
+		
+		

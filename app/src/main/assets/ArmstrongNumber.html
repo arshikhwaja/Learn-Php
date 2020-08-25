@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Armstrong Number</p><hr>		
+	</div>
+	<br>
+	<span class="Heading"><b>Logic:</b></span><br>
+	<ul>
+	<li>Take a number and store it in a variable</li>
+	<li>Take a variable for sum</li>
+	<li>Divide the number with 10 until quotient is 0</li>
+	<li>Count the remainder</li>
+	<li>Compare sum variable and number variable</li>
+	</ul>
+<br>
+<span class="Heading"><b>Program:</b></span><br>
+	<pre class="CodeBox">
+<span class="tag">&lt;&#63;php</span>				
+<span class="VariableName">$num</span><span class="Expression"> = </span><span class="VariableValue">407</span><span class="Expression">;</span>
+<span class="VariableName">$total</span><span class="Expression"> = </span><span class="VariableValue">0</span><span class="Expression">;</span>
+<span class="VariableName">$x</span><span class="Expression"> = </span><span class="VariableName">$num</span><span class="Expression">;</span>
+<span class="KeyWord">while</span><span class="Special">(</span><span class="VariableName">$x</span><span class="Expression"> > </span><span class="VariableValue">0</span><span class="Special">)</span>
+<span class="Special">{</span>
+<span class="VariableName"> $rem</span><span class="Expression"> = </span><span class="VariableName">$x</span><span class="Expression"> % </span><span class="VariableValue">10</span><span class="Expression">;</span>
+<span class="VariableName"> $total</span><span class="Expression"> *= </span><span class="VariableName">$rem</span><span class="Expression"> * </span><span class="VariableName">$rem</span><span class="Expression"> * </span><span class="VariableName">$rem</span><span class="Expression">;</span>	
+<span class="VariableName"> $x</span><span class="Expression"> /= </span><span class="VariableValue">10</span>
+<span class="Special">}</span>
+<span class="KeyWord">if</span><span class="Special">(</span><span class="VariableName">$num</span><span class="Expression"> == </span><span class="VariableName">$total</span><span class="Expression">)</span>
+<span class="Method"> echo</span><span class="Answer"> $num. </span><span class="String">" is an armstrong number "</span><span class="Expression">;</span>
+<span class="KeyWord">else</span>
+<span class="Method"> echo</span><span class="Answer"> $num. </span><span class="String">" is not an armstrong number "</span><span class="Expression">;</span>	
+<span class="tag">&#63;&gt;</span>	
+	</pre>
+		
+		<div class="Output">
+			<p>Output:</p>
+				<span>&nbsp;&nbsp;407 is an armstrong number</span><br />
+		</div>
+</body>
+</html>

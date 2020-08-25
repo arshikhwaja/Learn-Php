@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP For Loop</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	PHP do-while loop can be used to traverse set of code like php while loop. The PHP do-while loop is guaranteed to run at least once.
+	<br>The PHP do-while loop is used to execute a set of code of the program several times. If you have to execute the loop at least once and the number of iterations is not even fixed, it is recommended to use the do-while loop.
+	<br>It executes the code at least one time always because the condition is checked after executing the code.
+	<br>The do-while loop is very much similar to the while loop except the condition check. The main difference between both loops is that while loop checks the condition at the beginning, whereas do-while loop checks the condition at the end of the loop.</p>
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Syntex : </p> 
+	<pre class="CodeBox">
+	<span class="Method">do</span>{
+	<span class="Comment">//Code to be executed</span>
+	}<span class="Method">while</span>(condition);
+	</pre>
+	
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Example 1 : </p> 
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+	<span class="VariableName">$i</span>=<span class="VariableValue">1</span><span class="Expression">;</span>
+	<span class="Method">do</span>{
+	<span class="Method">echo</span><span class="String">"$i "</span><span class="Expression">;</span>
+	<span class="VariableName">$i++</span><span class="Expression">;</span>
+	}<span class="Method">while</span>($i<=10)<span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p class="title">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 2 3 4 5 6 7 8 9 10</span>
+		</div>
+		
+	
+</body>
+</html>

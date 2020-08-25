@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">PHP Recursive</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	Recursive function is a function which calls itself again and again until the termination condition arrive.
+	It is also known as recursion.</b>
+	<br><br>
+	
+	<b>Syntax:</b>
+	
+
+	
+	</p>
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>
+		function functionName() 
+		{
+			//code to be executed
+			//calling the same function inside this function;
+		}
+		
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">
+	Let's see a simple example of PHP recursive functions where we are printing numbers through a recursive function.
+	File: myfunc.php</p>
+	<pre class="CodeBox">
+	&it;!DOCTYPE&gt;
+	<span class="html">&lt;html&gt;</span>
+	<span class="body"> &lt;body&gt;</span>
+	<span class="tag">   &lt;&#63;php</span>
+	<span class="Method">   function display($number)<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp if($number<=5){ <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspecho</span><span class="String"> "$number"." "<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspdisplay($number+1)</span><span class="Expression">;<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbspdisplay(1);</span>
+	<span class="tag">   &#63;&gt;</span>	
+	<span class="body"> &lt;/body&gt;</span>
+	<span class="html">&lt;html&gt;</span>
+	</pre>
+	
+	<div class="Output">	
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 2 3 4 5</span><br />
+		</div>
+		
+		

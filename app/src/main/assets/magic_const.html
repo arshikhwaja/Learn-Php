@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="font-family:times new roman,georgia,garamond,serif;font-size: 12px;">
+	<div>
+		<p style="font-size: 18px; font-weight: bold; color:#2C5389 ">Magic Constant</p><hr>		
+	</div>
+	<p style="font-size:16px">
+	Magic constants are the predefined constants in PHP which get changed on the basis of their use. They start with double underscore (__) and ends with double underscore.
+	<br>They are similar to other predefined constants but as they change their values with the context, they are called magic constants.
+	<br>There are nine magic constants in PHP. In which eight magic constants start and end with double underscores (__).</p>
+	<table width="100%">
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>_LINE_</td>
+			<td>It returns the current line number of the file, where this constant is used.</td>
+		</tr>
+		<tr>
+			<td>_FILE_</td>
+			<td>IThis magic constant returns the full path of the executed file, where the file is stored. If it is used inside the include, the name of the included file is returned.</td>
+		</tr>
+		<tr>
+			<td>_DIR_</td>
+			<td>It returns the full directory path of the executed file. The path returned by this magic constant is equivalent to dirname(__FILE__). This magic constant does not have a trailing slash unless it is a root directory.</td>
+		</tr>
+		<tr>
+			<td>_FUNCTION_</td>
+			<td>This magic constant returns the function name, where this constant is used. It will return blank if it is used outside of any function.</td>
+		</tr>
+		<tr>
+			<td>_CLASS_</td>
+			<td>It returns the class name, where this magic constant is used. __CLASS__ constant also works in traits.</td>
+		</tr>
+		<tr>
+			<td>_TRAIT_</td>
+			<td>This magic constant returns the trait name, where it is used.</td>
+		</tr>
+		<tr>
+			<td>_METHOD_</td>
+			<td>IIt returns the name of the class method where this magic constant is included. The method name is returned the same as it was declared.</td>
+		</tr>
+		<tr>
+			<td>_NAMESPACE_</td>
+			<td>It returns the current namespace where it is used.</td>
+		</tr>
+	</table>
+	<p style="font-size:16px">
+	Lets see an example for each of the above magical constant:
+	<br><br>
+	1.__LINE__
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="Method">echo<span class="String">&lt;&#63;h3&#63;&gt;Example for _Line_&lt;&#63;/h3&#63;&gt;</span><span class="Expression">;</span>
+	<span class="Comment">//print Your current line number i.e;4</span>
+	<span class="Method">echo<span class="String"> "You are at line number "</span>.<span class="Kerword">__LINE__</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exaple for __LINE__</span>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>You are at line number 4</b>
+		</div>
+	<p style="font-size:16px">
+	2.__FILE__
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="Method">echo<span class="String">&lt;&#63;h3&#63;&gt;Example for __FILE__&lt;&#63;/h3&#63;&gt;</span><span class="Expression">;</span>
+	<span class="Comment">//print full path of file with .php extension</span>
+	<span class="Method">echo<span class="Kerword"> __FILE__</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exaple for __FILE__</span>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C:\xampp\htdocs\program\magic.php
+		</div>
+	<p style="font-size:16px">
+	3.__DIR__
+	<pre class="CodeBox">
+	<span class="tag">&lt;&#63;php</span>		
+	<span class="Method">echo<span class="String">&lt;&#63;h3&#63;&gt;Example for __DIR__&lt;&#63;/h3&#63;&gt;</span><span class="Expression">;</span>
+	<span class="Comment">//print full path of directory where script will be placed</span>
+	<span class="Method">echo<span class="Kerword"> __DIR__</span><span class="Expression">;</span>
+	<span class="tag">&#63;&gt;</span>	
+	</pre>
+	<p style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;Output:</p>
+	<div class="Output">
+				<span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exaple for _DIR_</span>
+				<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C:\xampp\htdocs\program
+		</div>
+
+	
+	</body>
+</html>
